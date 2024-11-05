@@ -1,0 +1,76 @@
+/* LoadingPage.css */
+.loading-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .loading-bar {
+    position: absolute;
+    bottom: 10%; /* Move the bar up by 10% from the bottom */
+    left: 0;
+    width: 100%; /* Increase the width of the progress bar */
+    margin: 0 auto;
+    height: 10px; /* Increase thickness */
+    background-color: #444; /* Dark gray background */
+  }
+  
+  .loading-progress {
+    height: 100%;
+    background-color: white; /* White progress */
+    transition: width 0.1s ease;
+  }
+  
+  .loading-text {
+    margin-bottom: 5%;
+    margin-right: 20px;
+    font-size: 80px; /* Large text for the percentage */
+    font-weight: bold;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .loading-page {
+      font-size: 50px; /* Adjust text size for smaller screens */
+      padding: 15px;
+    }
+  
+    .loading-bar {
+      width: 100%; /* Slightly reduce width for better fit */
+      height: 8px; /* Reduce thickness */
+    }
+  
+    .loading-text {
+        margin-bottom: 25%;
+      font-size: 50px; /* Adjust percentage text size */
+    }
+  }
+  
+  /* Adjustments for very small screens */
+  @media (max-width: 480px) {
+    .loading-page {
+      font-size: 40px; /* Smaller font size for mobile */
+      padding: 10px;
+    }
+  
+    .loading-bar {
+      width: 100%; /* Use slightly smaller width for very small screens */
+      height: 6px; /* Make the bar thinner */
+    }
+  
+    .loading-text {
+        margin-bottom: 20%;
+      font-size: 40px; /* Smaller text for mobile */
+    }
+  }
+  
