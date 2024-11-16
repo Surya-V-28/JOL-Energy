@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import NavLinks from '../Navbar/NavLinks';
-import logo from './jolLogo.jpeg'; // Import your logo image
+import logo from './LOGO.png'; // Import your logo image
 
 const NavBar = () => {
     const [top, setTop] = useState(!window.scrollY);

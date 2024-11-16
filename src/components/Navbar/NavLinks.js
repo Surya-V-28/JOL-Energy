@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom'; // Import useLocation hook
 
 const NavLinks = () => {
     const [isAtTop, setIsAtTop] = useState(true);
+    const location = useLocation(); // Get current location
 
     useEffect(() => {
         const scrollHandler = () => {
@@ -15,7 +17,11 @@ const NavLinks = () => {
         return () => window.removeEventListener('scroll', scrollHandler);
     }, []);
 
-    const textColor = isAtTop ? 'white' : 'black'; // Change color based on scroll position
+    // Check if the current path is '/get-involved'
+    const isGetInvolvedPath = location.pathname === '/get-involved';
+
+    // Set text color to black if on '/get-involved', otherwise based on scroll position
+    const textColor = isGetInvolvedPath ? 'black' : (isAtTop ? 'white' : 'black');
 
     return (
         <>
