@@ -6,6 +6,12 @@
 
   "dependencies": {
 
+    "@emotion/react": "^11.13.3",
+
+    "@emotion/styled": "^11.13.0",
+
+    "@mui/material": "^6.1.7",
+
     "@react-google-maps/api": "^2.19.3",
 
     "@testing-library/jest-dom": "^5.16.1",

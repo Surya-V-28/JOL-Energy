@@ -10,6 +10,7 @@ import BlogHome from '../components/BlogHome';
 import Contact from './Contact';
 import { useDocTitle } from '../components/CustomHook';
 import VideoComponent from '../components/VideoComponent';
+import ProcessPage from '../components/ProcessPage';
 
 const Home = () => {
     useDocTitle('JOL Energy');
@@ -23,7 +24,8 @@ const Home = () => {
             <Portfolio />
             <Clients />
             <BlogHome />
-            <Cta/>
+            {/* <Cta/> */}
+            <ProcessPage />
             <Contact />
             <Footer />
         </>

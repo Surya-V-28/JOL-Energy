@@ -21,7 +21,7 @@ const Services = () => {
 
                 <div className="px-12" data-aos="fade-down" data-aos-delay="600">
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-green-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-[#fdcb0a] hover:text-white rounded-lg shadow-2xl p-3 group">
                             <div className="m-2 text-justify text-sm">
                                 <img alt="Education Programs" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img1} />
                                 <h2 className="font-semibold my-4 text-2xl text-center text-black">Educational Programs</h2>
@@ -31,7 +31,7 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-green-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-[#fdcb0a] hover:text-white rounded-lg shadow-2xl p-3 group">
                             <div className="m-2 text-justify text-sm">
                                 <img alt="Mentorship" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img2} />
                                 <h2 className="font-semibold my-4 text-2xl text-center text-black">Mentorship Programs</h2>
@@ -41,7 +41,7 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-green-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-[#fdcb0a] hover:text-white rounded-lg shadow-2xl p-3 group">
                             <div className="m-2 text-justify text-sm">
                                 <img alt="Community Initiatives" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img3} />
                                 <h2 className="font-semibold my-4 text-2xl text-center text-black">Community Outreach</h2>
@@ -51,7 +51,7 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-green-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+                        <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-[#fdcb0a] hover:text-white rounded-lg shadow-2xl p-3 group">
                             <div className="m-2 text-justify text-sm">
                                 <img alt="Volunteer Opportunities" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img4} />
                                 <h2 className="font-semibold my-4 text-2xl text-center text-black">Volunteer Opportunities</h2>

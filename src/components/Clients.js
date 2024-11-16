@@ -1,14 +1,17 @@
 import React from 'react';
 
-import partner1 from '../images/unicef.jpg';
-import partner2 from '../images/save.jpg';
-import partner3 from '../images/ford.jpg';
+import partner1 from '../images/clients/50-yrs-logo.jpg';
+import partner2 from '../images/clients/DSTNidhi.png';
+import partner3 from '../images/clients/MeitYStartUp.png';
+import partner4 from '../images/clients/VIT.png';
+import partner5 from '../images/clients/innovactionConcil.png';
+import partner6 from '../images/clients/ministry.png';
 
-const partnerImage = {
-    height: '10rem',
-    width: 'auto',
-    mixBlendMode: 'color-burn',
+const partnerContainerStyle = {
+    height: '4rem',
+    width: '90%',
     borderRadius: '0.75rem',
+    overflow: 'hidden',
 };
 
 const Partners = () => {
@@ -24,19 +27,21 @@ const Partners = () => {
                         We are proud to collaborate with these amazing partners.
                     </h2>
                 </div>
-
-                {/* Horizontal scroll wrapper */}
                 <div className="overflow-x-auto whitespace-nowrap p-8" data-aos="fade-in" data-aos-delay="600">
-                    {/* Inner container with fixed-width items */}
                     <div className="flex space-x-8" style={{ minWidth: '1200px' }}>
-
-                        <div style={partnerImage} className="overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={partner3} alt="Partner 3 - Description" className="w-full h-full object-cover rounded-lg" />
-                        </div>
-                        
-                        <div style={partnerImage} className="overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={partner3} alt="Partner 3 - Description" className="w-full h-full object-cover rounded-lg" />
-                        </div>
+                        {[partner1, partner2, partner3, partner4, partner5, partner6].map((partner, index) => (
+                            <div
+                                key={index}
+                                style={partnerContainerStyle}
+                                className="flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100"
+                            >
+                                <img
+                                    src={partner}
+                                    alt={`Partner ${index + 1} - Description`}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

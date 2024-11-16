@@ -95,7 +95,7 @@ const Intro = () => {
             className="my-8 p-8 bg-white shadow-xl rounded-xl"
             data-aos="fade-up"
           >
-            <h3 className="text-2xl text-green-900 font-bold mb-4">
+            <h3 className="text-2xl text-black font-bold mb-4">
               Our Team Members
             </h3>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -105,7 +105,7 @@ const Intro = () => {
                   className="rounded-full mx-auto w-48 h-48 object-cover shadow-lg transition-transform transform hover:scale-105 duration-300"
                   src={teamMember1}
                 />
-                <h3 className="mt-4 text-2xl text-green-900 font-semibold">
+                <h3 className="mt-4 text-2xl text-black font-semibold">
                   Dr. Akella Shivaramkrishnan
                 </h3>
                 <p className="text-md text-gray-600 font-bold">
@@ -124,7 +124,7 @@ const Intro = () => {
                   className="rounded-full mx-auto w-48 h-48 object-cover shadow-lg transition-transform transform hover:scale-105 duration-300"
                   src={teamMember2}
                 />
-                <h3 className="mt-4 text-2xl text-green-900 font-semibold">
+                <h3 className="mt-4 text-2xl text-black font-semibold">
                   Shrivishaal
                 </h3>
                 <p className="text-md font-bold text-gray-600">
@@ -142,7 +142,7 @@ const Intro = () => {
                   className="rounded-full mx-auto w-48 h-48 object-cover shadow-lg transition-transform transform hover:scale-105 duration-300"
                   src={teamMember3}
                 />
-                <h3 className="mt-4 text-2xl text-green-900 font-semibold">
+                <h3 className="mt-4 text-2xl text-black font-semibold">
                   Sree Ramkumar
                 </h3>
                 <p className="text-md font-bold text-gray-600">
@@ -160,7 +160,7 @@ const Intro = () => {
                   className="rounded-full mx-auto w-48 h-48 object-cover shadow-lg transition-transform transform hover:scale-105 duration-300"
                   src={teamMember4}
                 />
-                <h3 className="mt-4 text-2xl text-green-900 font-semibold">
+                <h3 className="mt-4 text-2xl text-black font-semibold">
                   Dharaneesh
                 </h3>
                 <p className="text-md font-bold text-gray-600">B.Tech ECE</p>
