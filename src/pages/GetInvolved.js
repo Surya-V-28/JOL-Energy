@@ -42,7 +42,9 @@ const CareerPage = () => {
       setLastName("");
       setLocation("");
       setLinkedIn("");
-      setResume(null);
+      setResume("");
+      e.target.files[0] = "";
+
       Notiflix.Notify.success(
         "Your application has been submitted. We will contact you soon.",
         {
@@ -174,6 +176,7 @@ const CareerPage = () => {
 
               <div className="text-center">
                 <button
+                
                   type="submit"
                   id="submitBtn"
                   className="uppercase text-sm font-bold tracking-wide bg-gray-500 hover:bg-green-900 text-gray-100 p-3 rounded-lg w-full lg:w-auto transition duration-300 ease-in-out transform hover:scale-105"

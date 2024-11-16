@@ -74,8 +74,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3182ce; /* Blue color */
-    color: white;
+    background-color: #fdcb0a; /* Blue color */
+    color: black;
     padding: 8px 16px;
     border-radius: 4px;
     text-decoration: none;
@@ -153,8 +153,8 @@
     margin-bottom: 16px; /* Space from the bottom of the card */
     padding: 10px 20px; /* Adjust padding as needed */
     text-decoration: none;
-    color: white;
-    background-color: #007f00; /* Adjust color as needed */
+    color: black;
+    background-color: #fdcb0a; /* Adjust color as needed */
     border-radius: 5px;
     text-align: center;
     display: inline-flex;
@@ -163,7 +163,7 @@
 }
 
 .card-button:hover {
-    background-color: #005600; /* Adjust hover color as needed */
+    background-color: yellow; /* Adjust hover color as needed */
 }
 
 .card:hover {

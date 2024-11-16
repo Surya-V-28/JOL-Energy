@@ -7,7 +7,7 @@ const BatteryRecyclingProcess = () => {
       title: "Battery Collection",
       description:
         "Implementing a robust collection network through partnerships and strategically located drop-off points.",
-      icon: "🗑️", // Replace with actual image or SVG
+      icon: "🗑️",
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const BatteryRecyclingProcess = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-8 items-center py-12 justify-center space-y-8">
+    <div className="flex flex-col mt-8 items-center py-12 justify-center space-y-8" id="process">
       <div className="container mx-auto px-4 lg:px-20">
         {/* Heading with underline */}
         <div className="text-center mb-12">

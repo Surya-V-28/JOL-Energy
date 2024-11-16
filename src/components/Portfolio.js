@@ -55,7 +55,7 @@ const Portfolio = () => {
     // Filter projects based on category
     const filteredProjects = selectedCategory === 'All'
         ? projects
-        : projects.filter(project => project.status === selectedCategory);
+        : projects;
 
     // Calculate time left to register
     const calculateTimeLeft = (deadline) => {
@@ -82,39 +82,11 @@ const Portfolio = () => {
     return (
         <>
             <div className="my-4 py-4 bg-transparent" id='projects-all'>
-                <h2 className="my-2 text-center text-3xl text-green-900 uppercase font-bold">Our Initiatives Events</h2>
+                <h2 className="my-2 text-center text-3xl text-black uppercase font-bold">Our Initiatives Events</h2>
                 <div className='flex justify-center'>
-                    <div className='w-24 border-b-4 border-green-900 mb-8'></div>
+                    <div className='w-24 border-b-4 border-[#fdcb0a] mb-8'></div>
                 </div>
-
                 {/* Filters */}
-                <div className="flex justify-center mb-8">
-                    <button
-                        className={`px-4 py-2 mr-2 rounded ${selectedCategory === 'All' ? 'bg-green-900 text-white' : 'bg-gray-200 text-gray-900'}`}
-                        onClick={() => setSelectedCategory('All')}
-                    >
-                        All
-                    </button>
-                    <button
-                        className={`px-4 py-2 mr-2 rounded ${selectedCategory === 'Ongoing' ? 'bg-green-900 text-white' : 'bg-gray-200 text-gray-900'}`}
-                        onClick={() => setSelectedCategory('Ongoing')}
-                    >
-                        Ongoing
-                    </button>
-                    <button
-                        className={`px-4 py-2 mr-2 rounded ${selectedCategory === 'Completed' ? 'bg-green-900 text-white' : 'bg-gray-200 text-gray-900'}`}
-                        onClick={() => setSelectedCategory('Completed')}
-                    >
-                        Completed
-                    </button>
-                    <button
-                        className={`px-4 py-2 mr-2 rounded ${selectedCategory === 'Upcoming' ? 'bg-green-900 text-white' : 'bg-gray-200 text-gray-900'}`}
-                        onClick={() => setSelectedCategory('Upcoming')}
-                    >
-                        Upcoming
-                    </button>
-                </div>
-
                 <div className="px-4" data-aos="fade-down" data-aos-delay="600">
                     <div className="cards-container no-scrollbar">
                         {filteredProjects.map(project => (
