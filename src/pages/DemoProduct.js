@@ -6,7 +6,7 @@ import {useDocTitle} from '../components/CustomHook';
 
 const DemoProduct = (props) => {
 
-    useDocTitle('LearnLift Contribute Page')
+    useDocTitle('Jol Energy ')
 
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
@@ -53,59 +53,6 @@ const DemoProduct = (props) => {
         fData.append('phone_number', phone)
         fData.append('message', message)
         fData.append('products', demoProducts)
-
-        // emailjs.sendForm('service_7uy4ojg', 'template_et9wvdg', e.target, 'user_uE0bSPGbhRTmAF3I2fd3s')
-        //   .then((result) => {
-        //       console.log(result.text);
-        //       Notiflix.Report.success(
-        //         'Success',
-        //         '"Thanks for sending a message, we\'ll be in touch soon."',
-        //         'Okay',
-        //         );
-        //   }, (error) => {
-        //       console.log(error.text);
-        //       Notiflix.Report.failure(
-        //         'An error occured',
-        //         'Please try sending the message again.',
-        //         'Okay',
-        //         );
-        // //   });
-        // axios({
-        //     method: "post",
-        //     url: process.env.REACT_APP_DEMO_REQUEST_API,
-        //     data: fData,
-        //     headers: {
-        //         'Content-Type':  'multipart/form-data'
-        //     }
-        // })
-        // .then(function (response) {
-        //     document.getElementById('submitBtn').disabled = false;
-        //     document.getElementById('submitBtn').innerHTML = 'send message';
-        //     clearInput()
-        //     //handle success
-        //     Notiflix.Report.success(
-        //         'Success',
-        //         response.data.message,
-        //         'Okay',
-        //     );
-        // })
-        // .catch(function (error) {
-        //     document.getElementById('submitBtn').disabled = false;
-        //     document.getElementById('submitBtn').innerHTML = 'send message';
-        //     //handle error
-        //     const { response } = error;
-        //     if(response.status === 500) {
-        //         Notiflix.Report.failure(
-        //             'An error occurred',
-        //             response.data.message,
-        //             'Okay',
-        //         );
-        //     }
-        //     if(response.data.errors !== null) {
-        //         setErrors(response.data.errors)
-        //     }
-            
-        // });
     }
     return (
         <>

@@ -27,7 +27,7 @@ const Footer = () => {
               <ul className="text-md">
                 <li className="mb-2">
                   <HashLink
-                  smooth  to="#about"
+                    smooth to="#about"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     About Us
@@ -35,7 +35,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <HashLink
-                  smooth  to="#services"
+                    smooth to="#services"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Events
@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <HashLink
-                  smooth  to="#contact"
+                    smooth to="#contact"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Contact Us
@@ -60,7 +60,7 @@ const Footer = () => {
               <ul className="text-md">
                 <li className="mb-2">
                   <HashLink
-                   smooth to="/#Programs"
+                    smooth to="/#Programs"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Education Programs
@@ -68,16 +68,16 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <Link
-                   smooth to="/get-involved"
+                    smooth to="/get-involved"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
-                     Volunteer
+                    Volunteer
                   </Link>
                 </li>
 
                 <li className="mb-2">
                   <HashLink
-                   smooth to="/#projects-all"
+                    smooth to="/#projects-all"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Events
@@ -94,39 +94,50 @@ const Footer = () => {
                 Stay connected through our social media channels.
               </div>
               <div className="mx-auto text-center mt-2">
-                <ul className="flex justify-center mb-4 md:mb-0">
-                  <li>
-                    <Link
-                      to="#"
-                      className="flex justify-center items-center text-black hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                      aria-label="Twitter"
-                    >
-                      <svg
-                        className="w-8 h-8 fill-[#fdcb0a]"
-                        viewBox="0 0 32 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path className="fill-black"
-                        d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z" />
-                      </svg>
-                    </Link>
-                  </li>
-                  <li className="ml-4">
-                    <Link
-                      to="#"
-                      className="flex justify-center items-center text-black hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                      aria-label="Facebook"
-                    >
-                      <svg
-                        className="w-8 h-8 fill-black"
-                        viewBox="0 0 32 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path className="fill-black" d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
-                      </svg>
-                    </Link>
-                  </li>
-                </ul>
+              <ul className="flex justify-center mb-4 md:mb-0 space-x-4">
+  {/* Instagram link - Correct SVG */}
+  <li>
+    <a
+      href="https://www.instagram.com/jolenergy.in/"
+      className="flex justify-center items-center text-black hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out p-2"
+      aria-label="Instagram"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg
+        className="w-8 h-8"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 190.2c-41.7 0-75.3-33.6-75.3-75.3s33.6-75.3 75.3-75.3 75.3 33.6 75.3 75.3-33.6 75.3-75.3 75.3zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-93-26.2-26.2-57.6-34.5-93-36.2-36.7-2.1-147.3-2.1-184 0-35.3 1.7-66.7 9.9-93 36.2-26.2 26.2-34.5 57.6-36.2 93-2.1 36.7-2.1 147.3 0 184 1.7 35.3 9.9 66.7 36.2 93 26.2 26.2 57.6 34.5 93 36.2 36.7 2.1 147.3 2.1 184 0 35.3-1.7 66.7-9.9 93-36.2 26.2-26.2 34.5-57.6 36.2-93 2.1-36.7 2.1-147.3 0-184zm-48.1 213.8c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z"
+        />
+      </svg>
+    </a>
+  </li>
+
+  {/* Placeholder for another Instagram link */}
+  <li>
+    <a
+      href="https://www.instagram.com/jolenergy.in/"
+      className="flex justify-center items-center text-black hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out p-2"
+      aria-label="Instagram"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg
+        className="w-8 h-8"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >   
+        <path
+          d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z"
+        />
+      </svg>
+    </a>
+  </li>
+</ul>
+
               </div>
             </div>
           </div>

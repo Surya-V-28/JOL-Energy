@@ -16,7 +16,7 @@ const LoadingPage = ({ onLoadingComplete }) => {
           return 100;
         }
       });
-    }, 50); // Adjust speed if needed
+    }, 25); // Adjust speed if needed
 
     return () => clearInterval(interval);
   }, [onLoadingComplete]);

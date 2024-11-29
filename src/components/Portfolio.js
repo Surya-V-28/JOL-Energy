@@ -1,48 +1,52 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';// Import Notiflix
 import './Portfolio.css';  // Import the CSS file for custom scrollbar styles
-import img1 from '../images/teaching.jpeg'; // Import actual images for the projects
-import img2 from '../images/teaching.jpeg';
-import img3 from '../images/teaching.jpeg';
-import img4 from '../images/teaching.jpeg';
-import img5 from '../images/teaching.jpeg';
+import img1 from '../images/Events1.png'; // Update with appropriate images
+import img2 from '../images/Event2.png';
+import img3 from '../images/Event3.png';
+import img4 from '../images/Event4.png';
+import img5 from '../images/Event5.png';
+import Notiflix from "notiflix";
+
 
 const Portfolio = () => {
-    // Sample projects data
+    // Sample projects data related to battery and e-waste
     const [projects] = useState([
         {
             id: 1,
-            title: 'Educational Support',
-            description: 'Provides resources, tutoring, and scholarships to underprivileged students.',
-            status: 'Ongoing',
+            title: 'Battery Recycling Awareness',
+            description: 'Raising awareness about the importance of recycling used batteries to reduce environmental impact.',
+            status: 'Upcoming',
+            registerDeadline: '2024-08-30',
             image: img1,
         },
         {
             id: 2,
-            title: 'Community Outreach',
-            description: 'Supports local volunteers and organizes community events.',
-            status: 'Completed',
+            title: 'E-Waste Collection Drive',
+            description: 'Organizing collection drives to gather old electronic devices and promote safe recycling practices.',
+            status: 'Upcoming',
+            registerDeadline: '2024-08-30',
             image: img2,
         },
         {
             id: 3,
-            title: 'Health and Wellness',
-            description: 'Provides medical care and health education to underserved communities.',
-            status: 'Ongoing',
-            image: img3,
+            title: 'Social Awareness on E-Waste',
+            description: 'Educating communities about the dangers of improper disposal of e-waste and how to recycle responsibly.',
+            status: 'Upcoming',
+            registerDeadline: '2024-08-30',
+            image: img3
         },
         {
             id: 4,
-            title: 'Environmental Sustainability',
-            description: 'Promotes eco-friendly practices and organizes clean-up events.',
+            title: 'E-Waste Battery Recycling Program',
+            description: 'Promoting safe disposal and recycling of old batteries to reduce toxic waste in landfills.',
             status: 'Upcoming',
             image: img4,
             registerDeadline: '2024-08-30',
         },
         {
             id: 5,
-            title: 'Additional Project',
-            description: 'Description for additional project.',
+            title: 'Sustainable E-Waste Practices',
+            description: 'Introducing sustainable practices for handling e-waste, ensuring responsible recycling and reuse of electronic components.',
             status: 'Upcoming',
             image: img5,
             registerDeadline: '2024-08-20',
@@ -55,7 +59,7 @@ const Portfolio = () => {
     // Filter projects based on category
     const filteredProjects = selectedCategory === 'All'
         ? projects
-        : projects;
+        : projects.filter(project => project.status === selectedCategory);
 
     // Calculate time left to register
     const calculateTimeLeft = (deadline) => {
@@ -69,20 +73,15 @@ const Portfolio = () => {
         return `${daysLeft} days left`;
     };
 
-    // Handle view details button click
-    // const handleViewDetails = () => {
-    //     Notiflix.Notify.info('This feature is under implementation.');
-    // };
-
     // Handle register button click
     const handleRegister = () => {
-        window.open('https://forms.gle/YOUR_GOOGLE_FORM_ID', '_blank');
+        Notiflix.Notify.failure('Event registration is closed!');
     };
 
     return (
         <>
             <div className="my-4 py-4 bg-transparent" id='projects-all'>
-                <h2 className="my-2 text-center text-3xl text-black uppercase font-bold">Our Initiatives Events</h2>
+                <h2 className="my-2 text-center text-3xl text-black uppercase font-bold">Our E-Waste and Recycling Initiatives</h2>
                 <div className='flex justify-center'>
                     <div className='w-24 border-b-4 border-[#fdcb0a] mb-8'></div>
                 </div>
@@ -104,9 +103,9 @@ const Portfolio = () => {
                                             </button>
                                         </div>
                                     ) : (
-                                        <button onClick={ ()=> {
-                                            console.log("entered");
-                                          }} className="card-button">
+                                        <button onClick={() => {
+                                            console.log("View more details for project: ", project.title);
+                                        }} className="card-button">
                                             View Details
                                             <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                         </button>

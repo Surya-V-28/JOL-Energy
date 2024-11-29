@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar/NavBar";
-import heroImg from "../images/teamPhoto.jpeg"; // Update with an image relevant to your NGO
 import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
@@ -12,7 +11,7 @@ const Hero = () => {
           <NavBar />
         </div>
         <div
-          className="m-auto overflow-hidden mx-4  p-2 md:p-12 h-5/6"
+          className="m-auto overflow-hidden mx-4 p-2 md:p-12 h-5/6"
           data-aos="zoom-in"
         >
           <div
@@ -25,10 +24,11 @@ const Hero = () => {
               data-aos-delay="200"
             >
               <h1 className="mb-5 md:text-5xl text-3xl font-bold text-white">
-                E-Waste Management 
+                E-Waste Management
               </h1>
               <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-                Minimize environmental impact and maximize resource recovery with our comprehensive suite of services.
+                Minimize environmental impact and maximize resource recovery
+                with our comprehensive suite of services.
               </div>
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <Link
@@ -75,11 +75,16 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <img
-                alt="Hero _image"
-              className="rounded-lg float-right duration-1000 border-4 border-[#fdcb0a] shadow-lg  max-w-xl transition-transform  hover:scale-105"
-                src={heroImg}
-              />
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  src="https://www.youtube.com/embed/SELiGZY-Dik?si=QuGKR4qJlvR6zvYR"
+                  title="Career Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full border-4 border-[#fdcb0a] rounded-lg"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

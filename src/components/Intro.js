@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import img from "../images/Batteries.jpg"; // Update with an image relevant to your NGO
 import teamMember1 from "../images/Akella_Shivaramkrishnan_pic.png"; // Add actual images
 import teamMember2 from "../images/Shri_Vishaal.png";
-import teamMember3 from "../images/Founder3.jpg";
+import teamMember3 from "../images/SreeRam.png";
 import teamMember4 from "../images/Dharaneesh.jpeg";
 
 const Intro = () => {
@@ -73,7 +73,7 @@ const Intro = () => {
                 to="/get-involved"
                 className="text-black bg-[#fdcb0a] hover:bg-[#bf9a09]  inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 group transition-transform transform hover:scale-105 duration-300"
               >
-                Get Involved
+                Join Team
                 <svg
                   className="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform duration-300"
                   xmlns="http://www.w3.org/2000/svg"

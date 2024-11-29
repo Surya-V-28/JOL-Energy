@@ -13,8 +13,7 @@ import { useDocTitle } from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 import GetInvolved from './pages/GetInvolved';
 import BlogHome from './components/BlogHome';
-import BlogPost1 from './components/BlogPost1';
-import BlogPost2 from './components/BlogPost2';
+
 import LoadingPage from './components/LoadingPage'; // Import the LoadingPage
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle('LearnLift Home | NGO');
+  useDocTitle('Jol Energy');
 
   const handleLoadingComplete = () => {
     setLoading(false);
@@ -53,8 +52,6 @@ function App() {
               <Route path="/get-donate" element={<DemoProduct />} />
               <Route path="/get-involved" element={<GetInvolved />} />
               <Route path="/blog" element={<BlogHome />} />
-              <Route path="/blog/1" element={<BlogPost1 />} />
-              <Route path="/blog/2" element={<BlogPost2 />} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </ScrollToTop>
