@@ -93,7 +93,7 @@ const Contact = () => {
                 <i className="fas fa-envelope mr-3" />
                 <div>
                   <h3 className="text-xl">Send an E-mail</h3>
-                  <p className="text-gray-300">contact@jolenergy.com</p>
+                  <p className="text-gray-300">jolenergy.x@gmail.com</p>
                 </div>
               </div>
             </div>

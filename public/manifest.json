@@ -1,25 +1,30 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Battery Recycling",
+  "name": "Jol Energy Pvt. Ltd.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/logotSeo.ico",
+      "sizes": "192x192",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/logotSeo.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0B3D91",
+  "background_color": "#ffffff",
+  "description": "Jol Energy Pvt. Ltd. specializes in sustainable battery recycling solutions, including lithium-ion battery recycling, nickel manganese cobalt recovery, and black mass recycling technologies.",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr"
 }

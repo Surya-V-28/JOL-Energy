@@ -63,7 +63,7 @@ const Footer = () => {
                     smooth to="/#Programs"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
-                    Education Programs
+                  Services
                   </HashLink>
                 </li>
                 <li className="mb-2">
@@ -71,7 +71,8 @@ const Footer = () => {
                     smooth to="/get-involved"
                     className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
                   >
-                    Volunteer
+                    Join Events
+                    
                   </Link>
                 </li>
 

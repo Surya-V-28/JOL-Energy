@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import './index.css';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 // All pages
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -52,7 +52,7 @@ function App() {
               <Route path="/get-donate" element={<DemoProduct />} />
               <Route path="/get-involved" element={<GetInvolved />} />
               <Route path="/blog" element={<BlogHome />} />
-              <Route path="*" element={<Navigate to="/" />} />
+              <Route path="*" element={< Home />} />
             </Routes>
           </ScrollToTop>
         </Router>
@@ -60,5 +60,13 @@ function App() {
     </>
   );
 }
+
+function RedirectToExternal() {
+  if (window.location.pathname !== "/") {
+    window.location.pathname="/";
+  }
+  return null;
+}
+
 
 export default App;
