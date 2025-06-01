@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import img from "../images/Batteries.jpg"; // Update with an image relevant to your NGO
 import teamMember1 from "../images/Akella_Shivaramkrishnan_pic.png"; // Add actual images
 import teamMember2 from "../images/Shri_Vishaal.png";
-import teamMember3 from "../images/SreeRam.png";
+import teamMember3 from "../images/Varun_Suresh.PNG";
 import teamMember4 from "../images/Dharaneesh.jpeg";
 
 const Intro = () => {
@@ -13,7 +13,6 @@ const Intro = () => {
         className="relative w-full min-h-screen p-2 md:p-12 bg-gray-200"
         id="about"
       >
-        {/* SVG Path Overlays */}
         <svg
           className="absolute inset-0 z-0"
           viewBox="0 0 1200 600"
@@ -138,20 +137,20 @@ const Intro = () => {
               </div>
               <div className="text-center">
                 <img
-                  alt="Sree Ramkumar"
+                  alt="Varun Suresh"
                   className="rounded-full mx-auto w-48 h-48 object-cover shadow-lg transition-transform transform hover:scale-105 duration-300"
                   src={teamMember3}
                 />
                 <h3 className="mt-4 text-2xl text-black font-semibold">
-                  Sree Ramkumar
-                </h3>
+                  
+                Varun Suresh
+                </h3> 
                 <p className="text-md font-bold text-gray-600">
                   Chief Operational Officer
                 </p>
                 <p className="text-md text-gray-500 mt-2">
-                  As a B.Tech CSE & Data Science graduate, Sree has enhanced
-                  JOL's operations through strategic partnerships and efficient
-                  production management.
+                With expertise in operations management, Varun oversees business operations, 
+                manages and builds strategic partnerships to drive efficiency and sustainable growth.
                 </p>
               </div>
               <div className="text-center">
